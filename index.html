@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dr. José Messias — Cirurgião Geral. Site em construção.">
+  <title>Dr. José Messias | Em breve</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul: #1c3d4f;
+      --azul-escuro: #0f2633;
+      --dourado: #c4a35a;
+      --dourado-claro: #e8d5a8;
+      --branco: #f8f9fa;
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      min-height: 100%;
+    }
+
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      font-weight: 300;
+      color: var(--branco);
+      background: var(--azul-escuro);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(28, 61, 79, 0.9) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 40% at 100% 100%, rgba(196, 163, 90, 0.08) 0%, transparent 50%),
+        linear-gradient(165deg, var(--azul-escuro) 0%, var(--azul) 50%, var(--azul-escuro) 100%);
+      z-index: -1;
+    }
+
+    .page {
+      text-align: center;
+      max-width: 32rem;
+      width: 100%;
+      animation: fadeIn 1s ease-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(1rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .monogram {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(4rem, 18vw, 6.5rem);
+      font-style: italic;
+      font-weight: 500;
+      color: var(--dourado);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.35rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .dots span {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--dourado);
+    }
+
+    h1 {
+      font-size: clamp(0.95rem, 3.5vw, 1.1rem);
+      font-weight: 500;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    .especialidade {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .especialidade::before,
+    .especialidade::after {
+      content: '';
+      width: 2.5rem;
+      height: 1px;
+      background: var(--dourado);
+      opacity: 0.7;
+    }
+
+    .especialidade span {
+      font-size: 0.7rem;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--dourado-claro);
+    }
+
+    .em-breve {
+      font-size: clamp(1.25rem, 4vw, 1.5rem);
+      font-weight: 400;
+      color: var(--branco);
+      margin-bottom: 0.75rem;
+    }
+
+    .mensagem {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: rgba(248, 249, 250, 0.65);
+      max-width: 22rem;
+      margin: 0 auto;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: rgba(248, 249, 250, 0.35);
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <p class="monogram" aria-hidden="true">jm</p>
+    <div class="dots" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+
+    <h1>Dr. José Messias</h1>
+    <p class="especialidade"><span>Cirurgião Geral</span></p>
+
+    <p class="em-breve">Em breve</p>
+    <p class="mensagem">
+      Estamos preparando o novo site. Volte em breve para conhecer nossa página.
+    </p>
+
+    <footer>drmessias.com.br</footer>
+  </main>
+</body>
+</html>
