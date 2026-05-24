@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="g-base" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b4a5c" stop-opacity="0.35"/>
+      <stop offset="45%" stop-color="#06263b" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#c8a35d" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="g-glow" cx="78%" cy="42%" r="55%">
+      <stop offset="0%" stop-color="#2a9aad" stop-opacity="0.28"/>
+      <stop offset="55%" stop-color="#06263b" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#041a28" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" stroke="#c8a35d" stroke-opacity="0.04" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1920" height="1080" fill="#041a28"/>
+  <rect width="1920" height="1080" fill="url(#g-base)"/>
+  <rect width="1920" height="1080" fill="url(#g-glow)"/>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+
+  <!-- Cruz médica suave (direita  visível no mobile com object-position) -->
+  <g opacity="0.14" transform="translate(1280 180)">
+    <rect x="88" y="0" width="44" height="220" rx="8" fill="#c8a35d"/>
+    <rect x="0" y="88" width="220" height="44" rx="8" fill="#c8a35d"/>
+  </g>
+  <g opacity="0.07" transform="translate(1480 520) scale(1.4)">
+    <rect x="88" y="0" width="44" height="220" rx="8" fill="#7ec8d4"/>
+    <rect x="0" y="88" width="220" height="44" rx="8" fill="#7ec8d4"/>
+  </g>
+
+  <!-- Linha de ECG -->
+  <path
+    d="M0 720 H320 L360 680 L400 760 L440 640 L480 800 L520 700 L560 740 L600 680 L640 720 H1920"
+    stroke="#c8a35d"
+    stroke-opacity="0.18"
+    stroke-width="3"
+    fill="none"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M0 820 H280 L320 780 L360 860 L400 740 L440 900 L480 800 L520 840 L560 780 L600 820 H1920"
+    stroke="#2a9aad"
+    stroke-opacity="0.12"
+    stroke-width="2"
+    fill="none"
+    stroke-linecap="round"
+  />
+
+  <!-- Círculos / moléculas -->
+  <circle cx="1560" cy="320" r="120" stroke="#c8a35d" stroke-opacity="0.1" stroke-width="2"/>
+  <circle cx="1560" cy="320" r="200" stroke="#2a9aad" stroke-opacity="0.08" stroke-width="1.5"/>
+  <circle cx="1560" cy="320" r="8" fill="#c8a35d" fill-opacity="0.25"/>
+  <circle cx="1680" cy="260" r="6" fill="#7ec8d4" fill-opacity="0.2"/>
+  <circle cx="1440" cy="400" r="5" fill="#7ec8d4" fill-opacity="0.18"/>
+
+  <!-- Estetoscópio estilizado -->
+  <g opacity="0.11" transform="translate(1380 600)">
+    <path
+      d="M40 0 C40 80 120 120 200 120 C280 120 360 80 360 0"
+      stroke="#c8a35d"
+      stroke-width="14"
+      fill="none"
+      stroke-linecap="round"
+    />
+    <circle cx="40" cy="0" r="28" stroke="#c8a35d" stroke-width="10" fill="none"/>
+    <circle cx="360" cy="0" r="28" stroke="#c8a35d" stroke-width="10" fill="none"/>
+    <path d="M200 120 V280" stroke="#c8a35d" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="200" cy="300" r="36" stroke="#2a9aad" stroke-width="10" fill="none"/>
+  </g>
+
+  <!-- Hélice DNA simplificada -->
+  <g opacity="0.09" transform="translate(1100 120)">
+    <path
+      d="M0 0 Q80 60 0 120 Q-80 180 0 240 Q80 300 0 360"
+      stroke="#7ec8d4"
+      stroke-width="4"
+      fill="none"
+    />
+    <path
+      d="M120 0 Q40 60 120 120 Q200 180 120 240 Q40 300 120 360"
+      stroke="#c8a35d"
+      stroke-width="4"
+      fill="none"
+    />
+    <line x1="20" y1="60" x2="100" y2="60" stroke="#c8a35d" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="20" y1="180" x2="100" y2="180" stroke="#c8a35d" stroke-width="2" stroke-opacity="0.6"/>
+    <line x1="20" y1="300" x2="100" y2="300" stroke="#c8a35d" stroke-width="2" stroke-opacity="0.6"/>
+  </g>
+
+  <!-- Partículas -->
+  <circle cx="200" cy="200" r="3" fill="#c8a35d" fill-opacity="0.15"/>
+  <circle cx="420" cy="140" r="2" fill="#7ec8d4" fill-opacity="0.2"/>
+  <circle cx="680" cy="900" r="4" fill="#c8a35d" fill-opacity="0.12"/>
+</svg>

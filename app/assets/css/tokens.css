@@ -1,0 +1,45 @@
+/**
+ * Design tokens — Dr. José Messias
+ * Fonte: designsystem.md
+ */
+
+:root {
+  /* Cores — primárias */
+  --color-primary: #06263b;
+  --color-primary-hover: #0b3653;
+  --color-primary-rgb: 6 38 59;
+
+  --color-gold: #c8a35d;
+  --color-gold-rgb: 200 163 93;
+  --color-gold-light: #d9bc82;
+  --color-gold-dark: #a88a45;
+
+  /* Cores — secundárias */
+  --color-background: #f7f5f2;
+  --color-background-muted: #efece8;
+  --color-border: #d9d9d6;
+  --color-white: #ffffff;
+
+  /* Texto */
+  --color-text: #06263b;
+  --color-text-muted: rgb(6 38 59 / 0.72);
+  --color-text-subtle: rgb(6 38 59 / 0.55);
+
+  /* Tipografia */
+  --font-primary: 'Montserrat', system-ui, sans-serif;
+  --font-secondary: 'Cormorant Garamond', Georgia, serif;
+
+  /* UI */
+  --radius-button: 999px;
+  --radius-premium: 1.375rem;
+  --shadow-soft: 0 12px 40px rgb(6 38 59 / 0.08);
+  --shadow-premium: 0 20px 60px rgb(6 38 59 / 0.12);
+
+  /* Hero (padrão OLLIV — holofote + fundo texturizado) */
+  --color-primary-dark: #041a28;
+  --hero-spot-core: #1a7a8c;
+  --hero-spot-bright: #156878;
+  --hero-spot-mid: #0f5a68;
+  --hero-spot-deep: #0a4550;
+  --hero-spot-edge: #06263b;
+}
