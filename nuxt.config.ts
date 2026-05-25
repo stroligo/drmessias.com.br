@@ -1,5 +1,7 @@
 import tailwindcss from '@tailwindcss/vite'
 
+const GA_MEASUREMENT_ID = 'G-61ZG4PKLJK'
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -43,6 +45,21 @@ export default defineNuxtConfig({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Montserrat:wght@300;400;500;600&display=swap',
+        },
+        { rel: 'preconnect', href: 'https://www.googletagmanager.com' },
+      ],
+      script: [
+        {
+          src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`,
+          async: true,
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `,
         },
       ],
     },
