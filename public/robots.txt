@@ -1,2 +1,4 @@
 User-Agent: *
-Disallow:
+Disallow: /uikit
+
+Sitemap: https://drmessias.com.br/sitemap.xml

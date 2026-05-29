@@ -3,6 +3,7 @@ export const site = {
     logo: '/images/logo.png',
     logoAlt: 'Dr. José Messias — Cirurgia Geral',
     domain: 'drmessias.com.br',
+    url: 'https://drmessias.com.br',
   },
 
   developer: {

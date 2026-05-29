@@ -1,0 +1,5 @@
+RewriteEngine On
+
+# www → domínio principal (https://drmessias.com.br)
+RewriteCond %{HTTP_HOST} ^www\.drmessias\.com\.br$ [NC]
+RewriteRule ^(.*)$ https://drmessias.com.br/$1 [R=301,L]

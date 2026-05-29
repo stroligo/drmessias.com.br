@@ -1,5 +1,18 @@
 <script setup lang="ts">
 import { defineAsyncComponent } from 'vue'
+import { site } from '~/data/site'
+
+const canonicalUrl = `${site.brand.url}/`
+
+useSeoMeta({
+  ogUrl: canonicalUrl,
+  ogType: 'website',
+  ogLocale: 'pt_BR',
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: canonicalUrl }],
+})
 
 const LandingTrustBar = defineAsyncComponent(
   () => import('~/components/landing/LandingTrustBar.vue'),
